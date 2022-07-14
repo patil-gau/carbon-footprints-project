@@ -3,15 +3,16 @@
 #include <ESP8266WebServer.h>
 #include <ESP8266HTTPClient.h>
 
+//last modified one
 WiFiClient wifiClient;
 
 String postData;
 
 /* Set these to your desired credentials. */
-const char *ssid = "LetzzBuild";  //ENTER YOUR WIFI SETTINGS
-const char *password = "workharddreambig";
+const char *ssid = "";  //ENTER YOUR WIFI SETTINGS
+const char *password = "";
  
-String host = "http://192.168.43.242:5000/saveSensorValues"; 
+String host = "http://192.168.4.247:5000/saveSensorValues"; 
 
 
 
@@ -22,6 +23,8 @@ boolean newdata=false;
 String location = "belgavi,karnataka";
 char co2value[10];
 char tempvalue[10];
+char bpvalue[20];
+char ecgvalue[30];
 
 
 void recvdata(){
@@ -130,11 +133,11 @@ HTTPClient http;
 
 recvdata();
 
-Serial.print("co2 value ");
+Serial.print("temp value ");
 String co2data =  co2value;
 Serial.print(co2data);
 Serial.println("");
-Serial.print("temp value ");
+Serial.print("pulse value ");
 String tempdata =  tempvalue;
 Serial.print(tempdata);
 Serial.println("");
