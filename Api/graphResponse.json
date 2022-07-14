@@ -1,0 +1,25 @@
+{
+  "data": {
+    "overall_extremes": {
+      "maxdate": "Tue, 01 Jun 2021 09:45:25 GMT", 
+      "maxvalue": 450, 
+      "mindate": "Tue, 01 Jun 2021 11:03:34 GMT", 
+      "minvalue": 400
+    }, 
+    "today_extremes": {
+      "maxdate": "Tue, 01 Jun 2021 09:45:25 GMT", 
+      "maxvalue": 450, 
+      "mindate": "Tue, 01 Jun 2021 11:03:34 GMT", 
+      "minvalue": 400
+    }, 
+    "x_values": [
+      "09:45:25", 
+      "11:03:34"
+    ], 
+    "y_values": [
+      450, 
+      400
+    ]
+  }, 
+  "status": 1
+}
